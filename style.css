@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai';
+}
+.logo{
+    display:flex;
+    align-items:center; 
+    font-size: 3rem; 
+}
+.logo img{
+    height:10vh;
+    width:10vh;
+   
+}
+ul li{
+    display:inline-block;
+    padding:2vh 1vw;
+    margin:2vh 1vh;
+}
+ul li a{
+    font-size:1.2rem;
+    font-family: 'Baloo Bhai';
+    text-decoration: none;
+    color:black;
+}
+@keyframes tabanimation{
+    from{color:black;}
+    to{color:#EC5B53;}
+}
+ul li a:hover{
+    animation: tabanimation 0.3s forwards;
+}
+
+ul li button{
+    font-size: 1.2rem;
+    height:8vh;
+    background-color: #EC5B53;
+    color:white;
+    padding:0px 1rem;
+    border-radius: 0.7rem;
+    border:0px;
+    font-family: 'Baloo Bhai';
+}
+nav{
+    padding:1vh 2vw;
+    height: 12vh;
+    width:98vw;
+    position:fixed;
+    top:0px;
+    z-index: 100;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 20px 0px 50px lightblue;
+}
+.part2{
+    display:flex;
+    align-items:center;
+    justify-content: right;
+    width:60vw;
+}
+.content1{
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    margin-left:10vw;
+    margin-top:150px;
+}
+.hi{
+    color:#EC5B53;
+    font-family:'Rubik';
+    font-size:18px;
+    margin:0 0 37px 0; 
+}
+.intro{
+    color:#EC5B53;
+    font-size: 60px;
+}
+.name1{
+    font-family:'Rufina',serif;
+    color:#002D5B;
+    font-size:70px;
+    margin-bottom: 30px;
+}
+#element{
+    font-family: "Poppins", sans-serif;
+    color:#102C57  ; 
+}
+.extrainfo{
+    font-size:30px;
+    font-family: 'Roboto';
+    margin-bottom:10px;
+}
+.content1 div button{
+    font-size: 20px;
+    font-family:'rubik';
+    height:60px;
+    padding:4px 25px;
+    margin-right:10px;
+    font-family:'rubik';
+    border-radius:10px;
+    
+}
+.btn2{
+    color:rgb(107, 107, 107);
+    border:1px solid #EC5B53 ;
+}
+.btn1{
+    background-color: #EC5B53;
+    color:white;
+    border:0px;
+}
+@keyframes btn2 {
+    from{
+        color:black;
+    }
+    to{
+        background-color: #EC5B53;
+        color:white;
+        cursor: pointer;
+    }
+}
+.btn2:hover{
+    animation: btn2 0.3s forwards;   
+}
+.btn1:hover{
+    cursor: pointer;
+}
+.bg1{
+    background-image: url(images/back1.jpg);
+    height:700px;
+    position:absolute;
+    top:90px;
+    width: 100%;
+}
+.bg2{
+    position:absolute;
+    top:890px; 
+    display:flex;  
+    justify-content: center;
+    align-items: center; 
+    width:95vw;
+    margin-top:40px;
+    padding-left:3vw;
+}
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 0.3s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 0.3s ease-in;
+  }
+  /* .active#delay1{
+    animation: fade-left 0.3s 3s ease-in;
+  }
+  .active#delay2{
+    animation: fade-left 0.3s 2s ease-in;
+  }
+  .active#delay3{
+    animation: fade-left 0.3s 1s ease-in;
+  } */
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.left{
+    width:35vw;
+}
+
+.left h3{
+    font-size: 30px;
+    font-family:'Rufina';
+    color:#000A2D;
+    margin-bottom:40px;
+    letter-spacing: 2px;
+}
+.left p{
+    font-family: 'Rubik';
+    color:#10285D;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+}
+.right{
+    width:35vw;
+    margin-left: 40px;
+}
+.right h3{
+    font-size: 40px;
+    font-family:'Rufina';
+    color:#000A2D;
+    margin-bottom:30px;
+    letter-spacing: 2px;
+}
+.right a{
+    font-size: 35px;
+    font-family:'Rubik';
+    color:#000A2D;
+}
+.right p{
+    font-size: 20px;
+    font-family:'Rubik';
+    color:#464D65;
+    margin-bottom:10px;
+}
+.bg3{
+    position:absolute;
+    top:1300px;
+    width:85vw;
+    margin-left:10vw;
+}
+.top{
+    font-size:48px;
+    font-family: 'Rufina';
+    width:570px;
+    margin-bottom: 100px;
+}
+.bottom{
+    display:flex;
+    width:85vw;
+    justify-content: space-between;
+}
+.first{
+    display:flex;
+    flex-direction: column;
+    height:400px;
+    width:25vw;
+    border:1px solid rgb(209, 209, 209);
+    border-radius: 15px;
+}
+.f1{
+    text-align: center;
+    font-size: 50px;
+    margin:15px 0px;
+}
+.f2{
+    text-align: center;
+}
+.f2 h5{
+    font-family: 'Rufina';
+    color:#1C165C;
+    font-size: 30px;
+    margin:15px 0px;
+}
+.f2 p{
+    font-family: 'Rubik';
+    color:#57667E;
+    font-size: 20px;
+    margin:25px 30px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+.bg4{
+    position:absolute;
+    top:2090px; 
+    display:flex;  
+    justify-content: center;
+    align-items: center; 
+    width:95vw;
+    margin-top:40px;
+    padding-bottom:100px;
+    padding-top:100px;
+    padding-left:3vw;
+    z-index: 10000;
+    background-color: rgb(252, 248, 248);
+}
+form input{
+    height:50.7px;
+    width:395.56px;
+    margin:10px 0px;
+    font-size:20px;
+    font-family:'Poppins'
+    border-radius:10px;
+}
+form textarea{
+    height:100.7px;
+    width:395.56px;
+    margin:10px 0px;
+    font-size:20px;
+    font-family:'Poppins'
+    border-radius:10px;
+}
+form button{
+    height:50.7px;
+    width:395.56px;
+    margin:10px 0px;
+    font-size:20px;
+    background-color: #EC5B53;
+    color: white;
+    border-radius:10px;
+
+}
+.foot{
+    position: absolute;
+    top:2700px;
+    z-index: 1000;
+    height:400px;
+    width:100%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000A2D;
+}
+.foot h1{
+    font-family: 'Rubik';
+}
